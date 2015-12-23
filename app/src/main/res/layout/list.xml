@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aoc.gmf.MyUI.MyLay
+
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:id="@+id/layselect_palace1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0">
+            <TextView
+                android:text="所属区域"
+                style="@style/user_label"  />
+
+            <EditText
+                android:id="@+id/edit_PlaceType1"
+                style="@style/user_text"
+                android:enabled="false"
+                android:text="    请选择"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/edit_imgPlace1"
+            android:layout_width="30dp"
+            android:gravity="bottom"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/edit"
+                />
+        </LinearLayout>
+    </com.aoc.gmf.MyUI.MyLay>
+      <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place5"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="invisible"
+        />
+    <com.roamer.slidelistview.SlideListView
+        xmlns:slide="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        slide:slideAnimationTime="200"
+        slide:slideLeftAction="scroll"
+        slide:slideMode="right"
+
+        android:minHeight="448dp"
+        android:scrollbars="none"
+        slide:slideRightAction="scroll"
+        android:layout_weight="3" />
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place9"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

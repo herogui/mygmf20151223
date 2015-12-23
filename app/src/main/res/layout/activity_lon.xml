@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/home"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    <include layout="@layout/topbar0"></include>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <CheckBox
+        android:textColor="#210bff"
+        android:layout_width="100dp"
+        android:id="@+id/ck1"
+        android:layout_height="50dp" android:text="用户1"
+        android:background="#8791b1ff" />
+    <CheckBox
+        android:textColor="#210bff"
+        android:layout_width="100dp"
+        android:id="@+id/ck2"
+        android:layout_height="50dp" android:text="用户2"
+        android:background="#8791b1ff" />
+
+
+    <CheckBox
+        android:textColor="#210bff"
+        android:layout_width="100dp"
+        android:id="@+id/ck3"
+        android:layout_height="50dp" android:text="用户3"
+        android:background="#8791b1ff" />
+
+
+    <CheckBox
+        android:textColor="#210bff"
+        android:layout_width="100dp"
+        android:id="@+id/ck4"
+        android:layout_height="50dp" android:text="用户4"
+        android:background="#8791b1ff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_width="100dp"
+        android:id="@+id/ck5"
+        android:textColor="#210bff"
+        android:layout_height="50dp" android:text="用户5"
+        android:background="#8791b1ff" />
+
+    <CheckBox
+        android:layout_width="100dp"
+        android:id="@+id/ck6"
+        android:textColor="#210bff"
+        android:layout_height="50dp" android:text="用户6"
+        android:background="#8791b1ff" />
+
+    <CheckBox
+        android:layout_width="100dp"
+        android:id="@+id/ck7"
+        android:textColor="#210bff"
+        android:layout_height="50dp" android:text="用户7"
+        android:background="#8791b1ff" />
+
+    <CheckBox
+        android:layout_width="100dp"
+        android:id="@+id/ck8"
+        android:textColor="#210bff"
+        android:layout_height="50dp" android:text="用户8"
+        android:background="#8791b1ff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/login2"
+        android:text="登  录"
+        style="@style/user_button"
+        android:layout_width="200dp"
+        android:background="@drawable/actions_btnok_selector"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

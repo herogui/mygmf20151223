@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/contentBack"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"        >
+
+        <TextView
+            android:id="@+id/income_setmoney"
+            android:text="名称："
+            style="@style/user_label"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/income_etxtmoney"
+            android:layout_toRightOf="@+id/income_setmoney"
+            style="@style/user_text"
+            android:password="false"
+            android:layout_height="wrap_content"
+            android:numeric="signed|decimal" />
+    </RelativeLayout>
+    <include  layout="@layout/horline"></include>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        >
+
+        <TextView
+            android:id="@+id/income_setmoney2"
+            android:text="法人："
+            style="@style/user_label"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/income_etxtmoney2"
+            android:layout_toRightOf="@+id/income_setmoney2"
+            style="@style/user_text"
+            android:password="false"
+            android:layout_height="wrap_content"
+            android:numeric="signed|decimal" />
+    </RelativeLayout>
+    <include  layout="@layout/horline"></include>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        >
+
+        <TextView
+            android:id="@+id/income_setmoney3"
+            android:text="地址："
+            style="@style/user_label"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/income_etxtmoney3"
+            android:layout_toRightOf="@+id/income_setmoney3"
+            style="@style/user_text"
+            android:password="false"
+            android:layout_height="wrap_content"
+            android:numeric="signed|decimal" />
+    </RelativeLayout>
+    <include  layout="@layout/horline"></include>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        >
+
+        <TextView
+            android:id="@+id/income_setmoney4"
+            android:text="粉尘排放量："
+            style="@style/user_label"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/income_etxtmoney4"
+            android:layout_toRightOf="@+id/income_setmoney4"
+            style="@style/user_text"
+            android:password="false"
+            android:layout_height="wrap_content"
+            android:numeric="signed|decimal" />
+    </RelativeLayout>
+    <include  layout="@layout/horline"></include>
+
+    <com.aoc.gmf.MyUI.MyLay
+        android:id="@+id/income_lay_type"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <TextView
+                android:text="项目类别："
+                style="@style/user_label"  />
+
+            <EditText
+                android:id="@+id/income_txttype"
+                style="@style/user_text"
+                android:enabled="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:gravity="bottom"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/edit"
+                />
+        </LinearLayout>
+    </com.aoc.gmf.MyUI.MyLay>
+    <include  layout="@layout/horline"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayoutincome_other"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/income_other"
+                android:text="其       它："
+                style="@style/user_label"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/income_etxtother"
+                android:layout_toRightOf="@+id/income_other"
+                style="@style/user_text"
+                android:password="false"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <include  layout="@layout/horline"></include>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_incomeadd"
+
+        android:layout_width="0.1dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

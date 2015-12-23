@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background2"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="提   示"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/controlText"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="是否删除?"
+        android:id="@+id/textView_dialog"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnCanel_dialog"
+            android:text="不删除"
+            style="@style/user_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/actions_btnnocir_selector"
+            />
+
+        <Button
+            android:id="@+id/btnOk_dialog"
+            android:layout_weight="1"
+            android:text="删除"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            style="@style/user_button"
+            android:background="@drawable/actions_btnnocir_selector"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

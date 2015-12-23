@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    >
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txtdata1_income"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="@color/contentTxt"
+            android:gravity="center"
+            android:text="项目类别" />
+
+    </LinearLayout>
+    <include  layout="@layout/verline"></include>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txtdata2_income"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="@color/contentTxt"
+            android:gravity="center"
+            android:text="金额" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

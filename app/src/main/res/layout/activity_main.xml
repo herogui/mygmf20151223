@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/topbar0"></include>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <ImageView
+        android:id="@+id/imglbs"
+        android:text="当前位置："
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/lbsnav"
+        android:layout_height="wrap_content"  />
+        <LinearLayout
+            android:id="@+id/btnlist"
+            android:layout_width="400dp"
+            android:layout_marginLeft="900dp"
+            android:layout_height="fill_parent"
+            android:background="#fff5f2"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                   android:id="@+id/btnZMN"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="啄木鸟行动"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btnGyqy"
+                    android:text="工业企业"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="建筑工地"
+                    android:id="@+id/btnJzgk"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="市政工地"
+                    android:id="@+id/btnszgd"
+                    android:layout_height="60dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btncqgd"
+                    android:text="拆迁工地"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/xslc"
+                    android:layout_width="wrap_content"
+                    android:text="小石料厂"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/ztyscl"
+                    android:layout_width="wrap_content"
+                    android:text="渣土运输车辆"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnztc"
+                    android:layout_width="wrap_content"
+                    android:text="渣土场"
+                    android:layout_height="60dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnlldm"
+                    android:layout_width="wrap_content"
+                    android:text="裸露地面"
+                    android:layout_height="60dp" />
+                <Button
+                    android:id="@+id/btndblgy"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="东部老工业区搬迁企业"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnjyz"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="加油站"
+                    android:layout_height="60dp" />
+                <Button
+                    android:id="@+id/btnkqzz"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="空气子站"
+                    android:layout_height="60dp" />
+                <Button
+                    android:id="@+id/rmgutt"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="燃煤锅炉淘汰"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="300dp"
+                    android:text="任务列表："
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include  layout="@layout/horline"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@drawable/table_frame_gray"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColor="#850"
+                        android:gravity="center"
+                        android:text="序号" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@drawable/table_frame_gray"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="名称"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textColor="#850"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.roamer.slidelistview.SlideListView
+                xmlns:slide="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/listview_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                slide:slideAnimationTime="200"
+                slide:slideLeftAction="scroll"
+                slide:slideMode="right"
+                android:minHeight="48dp"
+
+                android:scrollbars="none"
+                slide:slideRightAction="scroll" />
+            <include  layout="@layout/horline"></include>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

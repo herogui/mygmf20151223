@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="@color/contentBack"
+    android:layout_height="match_parent">
+    <include layout="@layout/topbar1"></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            >
+            <TextView
+                android:text="被检查单位名称："
+                style="@style/user_label"  />
+
+            <EditText
+                android:id="@+id/edit_etxtCheckFname"
+                style="@style/user_text"
+                android:hint=""
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+         >
+            <TextView
+                android:text="检查日期："
+                style="@style/user_label"  />
+
+            <EditText
+                android:id="@+id/edit_etxtCheckDate"
+                style="@style/user_text"
+                android:hint="" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include  layout="@layout/horline"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        >
+        <TextView
+            android:text="检查记录："
+            style="@style/user_label"
+          />
+
+        <EditText
+            android:id="@+id/edit_etxtJl"
+            style="@style/user_text"
+            android:hint="" />
+    </LinearLayout>
+    <include  layout="@layout/horline"></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="96dp"
+        >
+        <TextView
+            android:text="图片视频："
+            style="@style/user_label"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edit_etxtTupianshiping"
+            style="@style/user_text"
+            android:hint="" />
+    </LinearLayout>
+    </LinearLayout>
+    <include  layout="@layout/horline"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="780dp"
+            android:layout_height="280dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="存在问题："
+                style="@style/user_label"
+                android:gravity="center"
+                android:layout_width="119dp"
+                />
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                >
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="1."
+                        style="@style/user_label"  />
+                    <EditText
+                        style="@style/user_text"
+                        android:hint=""
+                        android:id="@+id/txtjilu1"
+                        android:layout_width="141dp"
+                        android:layout_weight="0.68" />
+                </LinearLayout> <include  layout="@layout/horline"></include>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                   >
+                    <TextView
+                        android:text="2."
+                        style="@style/user_label"  />
+                    <EditText
+                        style="@style/user_text"
+                        android:hint=""
+                        android:id="@+id/txtjilu2" />
+                </LinearLayout>
+                <include  layout="@layout/horline"></include>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                 >
+                    <TextView
+                        android:text="3."
+                        style="@style/user_label"  />
+                    <EditText
+                        style="@style/user_text"
+                        android:hint=""
+                        android:id="@+id/txtjilu3" />
+                </LinearLayout>
+                <include  layout="@layout/horline"></include>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                 >
+                    <TextView
+                        android:text="4."
+                        style="@style/user_label"  />
+                    <EditText
+                        style="@style/user_text"
+                        android:hint=""
+                        android:id="@+id/txtjilu4" />
+                </LinearLayout>
+                <include  layout="@layout/horline"></include>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                 >
+                    <TextView
+                        android:text="5."
+                        style="@style/user_label"  />
+                    <EditText
+                        style="@style/user_text"
+                        android:hint=""
+                        android:id="@+id/txtjilu5" />
+                </LinearLayout>
+                 <include  layout="@layout/horline"></include>
+            </LinearLayout>
+             </LinearLayout>
+             </LinearLayout>
+            <LinearLayout
+            android:layout_width="500dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="fill_parent">
+
+            <com.aoc.gmf.MyUI.MyLay
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/layselect_palace1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:text="责任单位："
+                        style="@style/user_label"  />
+
+                    <EditText
+                        android:id="@+id/edit_PlaceType1"
+                        style="@style/user_text"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_imgPlace1"
+                    android:layout_width="30dp"
+                    android:gravity="bottom"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/edit"
+                        />
+                </LinearLayout>
+            </com.aoc.gmf.MyUI.MyLay>
+            <include  layout="@layout/horline"></include>
+            <com.aoc.gmf.MyUI.MyLay
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/layselect_palace2">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:text="责任单位："
+                        style="@style/user_label"  />
+
+                    <EditText
+                        android:id="@+id/edit_PlaceType2"
+                        style="@style/user_text"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_imgPlace2"
+                    android:layout_width="30dp"
+                    android:gravity="bottom"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/edit"
+                        />
+                </LinearLayout>
+            </com.aoc.gmf.MyUI.MyLay>
+            <include  layout="@layout/horline"></include>
+            <com.aoc.gmf.MyUI.MyLay
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/layselect_palace3">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:text="责任单位："
+                        style="@style/user_label"  />
+
+                    <EditText
+                        android:id="@+id/edit_PlaceType3"
+                        style="@style/user_text"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_imgPlace3"
+                    android:layout_width="30dp"
+                    android:gravity="bottom"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/edit"
+                        />
+                </LinearLayout>
+            </com.aoc.gmf.MyUI.MyLay>
+                <include  layout="@layout/horline"></include>
+            <com.aoc.gmf.MyUI.MyLay
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/layselect_palace4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:text="责任单位："
+                        style="@style/user_label"  />
+
+                    <EditText
+                        android:id="@+id/edit_PlaceType4"
+                        style="@style/user_text"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_imgPlace4"
+                    android:layout_width="30dp"
+                    android:gravity="bottom"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/edit"
+                        />
+                </LinearLayout>
+            </com.aoc.gmf.MyUI.MyLay>
+                <include  layout="@layout/horline"></include>
+            <com.aoc.gmf.MyUI.MyLay
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/layselect_palace5">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:text="责任单位："
+                        style="@style/user_label"  />
+
+                    <EditText
+                        android:id="@+id/edit_PlaceType5"
+                        style="@style/user_text"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_imgPlace5"
+                    android:layout_width="30dp"
+                    android:gravity="bottom"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/edit"
+                        />
+                </LinearLayout>
+            </com.aoc.gmf.MyUI.MyLay>
+                <include  layout="@layout/horline"></include>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <include  layout="@layout/horline"></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        >
+        <TextView
+            android:text="整改反馈："
+            style="@style/user_label"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/edit_etxtFankui"
+            style="@style/user_text"
+            android:gravity="bottom"
+            android:hint="" />
+
+    </LinearLayout>
+    <include  layout="@layout/horline"></include>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnQuickReg"
+            android:text="取消"
+            style="@style/user_button"
+            android:layout_marginTop="10px"
+            android:layout_width="80dp"
+            android:background="@drawable/actions_btn_selector"
+            />
+        <Button
+            android:id="@+id/login2222"
+            android:text="保存"
+            android:layout_marginLeft="100dp"
+            style="@style/user_button"
+            android:layout_marginTop="10px"
+            android:layout_width="80dp"
+            android:background="@drawable/actions_btnok_selector"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place1"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place2"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place3"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place4"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+    <Spinner
+        android:layout_gravity="right"
+        android:id="@+id/spinner_place5"
+        android:layout_width="0.1dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

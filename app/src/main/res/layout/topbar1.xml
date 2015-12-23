@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+   >
+
+    <LinearLayout style="@style/topbar"
+        android:id="@+id/topbar_menu">
+        <LinearLayout
+            android:id="@+id/LinearLayoutback_topbar"
+            style="@style/back_button">
+            <ImageView
+                android:id="@+id/ImageView_topbar"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"/>
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TextViewTitle_topbar0"
+            style="@style/topbar_text"
+            android:textSize="18sp"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:text="检查单"
+       />
+    </LinearLayout>
+
+</LinearLayout>
